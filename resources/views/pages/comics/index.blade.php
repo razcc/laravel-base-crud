@@ -18,20 +18,26 @@
             <th>type</th>
         </tr>
 
-        @foreach ($comics as $elem )
-        <tr>
-            <th>{{$elem['id']}}</th>
-            <th>{{$elem['title']}}</th>
-            <th>{{$elem['description']}}</th>
-            <th>{{$elem['thumb']}}</th>
-            <th>{{$elem['price']}}</th>
-            <th>{{$elem['series']}}</th>
-            <th>{{$elem['sale_date']}}</th>
-            <th>{{$elem['type']}}</th>
-        </tr>
-            
+        @foreach ($comics as $elem)
+            <tr>
+                <th>{{ $elem['id'] }}</th>
+
+                <th>
+                    <a href="{{ route('comics.show', $elem['id']) }}">
+                        {{ $elem['title'] }}
+                    </a>
+
+                </th>
+
+                <th>{{ $elem['description'] }}</th>
+                <th>{{ $elem['thumb'] }}</th>
+                <th>{{ $elem['price'] }}</th>
+                <th>{{ $elem['series'] }}</th>
+                <th>{{ $elem['sale_date'] }}</th>
+                <th>{{ $elem['type'] }}</th>
+            </tr>
         @endforeach
-        
-        
+
+
     </table>
 @endsection
