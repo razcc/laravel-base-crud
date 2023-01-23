@@ -40,4 +40,5 @@
 
 
     </table>
+    {{$comics -> links()}}
 @endsection
