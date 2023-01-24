@@ -38,10 +38,10 @@
                 <th>
                     <a href="{{ route('comics.edit', $elem['id']) }}">Edit Element</a>
 
-                    <form action="{{ route('comics.destroy', $elem['id']) }}">
+                    <form method="POST" action="{{ route('comics.destroy', $elem['id']) }}">
                         @csrf
                         @method('DELETE')
-                        
+
                         <button type="submit">
                             Cancella definitivamente elemento
                         </button>
