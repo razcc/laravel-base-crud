@@ -44,7 +44,7 @@
             <!-- Thumg -->
             <div class="mb-3">
                   <labe class="form-label">Sale Date</labe>
-                  <input type="data" class="form-control" name="sale_date">
+                  <input type="date" class="form-control" name="sale_date">
             </div>
 
             <!-- Thumg -->
