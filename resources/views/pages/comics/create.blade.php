@@ -6,6 +6,17 @@
 
 
 @section('main-content')
+
+{{-- @if ($errors->any())
+      <div class="alert alert-danger">
+            <ul>
+                  @foreach ($errors->all() as $error )
+                        <li>{{ $error }}</li>
+                  @endforeach
+            </ul>
+      </div>
+@endif --}}
+
 <!-- Form -->
       <form method="POST" action="{{ route('comics.store') }}">
             
@@ -15,6 +26,13 @@
             <div class="mb-3">
                   <labe class="form-label">Title</labe>
                   <input type="text" class="form-control" name="title">
+
+                  {{-- Errore nel dettaglio --}}
+                  @error('title')
+                        <div class="alert alert-danger">
+                              {{ $message }}
+                        </div>
+                  @enderror
             </div>
 
             <!-- Description -->

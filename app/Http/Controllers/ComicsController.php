@@ -44,6 +44,11 @@ class ComicsController extends Controller
         //
         $data = $request->all();
 
+        // !Validation
+        $request->validate([
+            'title' => 'required'
+        ]);
+
         $newComic = new Comic();
 
         $newComic->fill($data);
