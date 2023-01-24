@@ -16,6 +16,7 @@
             <th>series</th>
             <th>sale_date</th>
             <th>type</th>
+            <th>Action</th>
         </tr>
 
 
@@ -28,6 +29,7 @@
                 <th>{{$elem['series']}}</th>
                 <th>{{$elem['sale_date']}}</th>
                 <th>{{$elem['type']}}</th>
+                
             </tr>
         
 

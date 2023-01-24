@@ -35,6 +35,20 @@
                 <th>{{ $elem['series'] }}</th>
                 <th>{{ $elem['sale_date'] }}</th>
                 <th>{{ $elem['type'] }}</th>
+                <th>
+                    <a href="{{ route('comics.edit', $elem['id']) }}">Edit Element</a>
+
+                    <form action="{{ route('comics.destroy', $elem['id']) }}">
+                        @csrf
+                        @method('DELETE')
+                        
+                        <button type="submit">
+                            Cancella definitivamente elemento
+                        </button>
+                    </form>
+                    
+                </th>
+
             </tr>
         @endforeach
 
