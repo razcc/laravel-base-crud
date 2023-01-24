@@ -4,7 +4,6 @@
 {{-- Sezione MAIN da modificare --}}
 @section('page-title', 'Comics')
 
-@section('main-content')
     <h1>Show Comic</h1>
     <table>
         <tr>
@@ -19,16 +18,16 @@
         </tr>
 
 
-            <tr>
-                <th>{{$elem['id']}}</th>
-                <th>{{$elem['title']}}</th>
-                <th>{{$elem['description']}}</th>
-                <th>{{$elem['thumb']}}</th>
-                <th>{{$elem['price']}}</th>
-                <th>{{$elem['series']}}</th>
-                <th>{{$elem['sale_date']}}</th>
-                <th>{{$elem['type']}}</th>
-            </tr>
+        <tr>
+            <th>{{$elem['id']}}</th>
+            <th>{{$elem['title']}}</th>
+            <th>{{$elem['description']}}</th>
+            <th>{{$elem['thumb']}}</th>
+            <th>{{$elem['price']}}</th>
+            <th>{{$elem['series']}}</th>
+            <th>{{$elem['sale_date']}}</th>
+            <th>{{$elem['type']}}</th>
+        </tr>
         
 
 
